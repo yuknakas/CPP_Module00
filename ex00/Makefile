@@ -6,7 +6,7 @@
 #    By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/06 11:13:27 by yuknakas          #+#    #+#              #
-#    Updated: 2025/10/11 13:52:15 by yuknakas         ###   ########.fr        #
+#    Updated: 2025/10/11 13:59:22 by yuknakas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME	=	megaphone
 CPP		=	c++ -Wall -Wextra -Werror -std=c++98
 
 SRCS	=	megaphone.cpp
-OBJS	=	$(SRCS:.c=.o)
+OBJS	=	$(SRCS:.cpp=.o)
 
 RMFLAG	=	rm -rf
 
