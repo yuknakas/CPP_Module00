@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 17:14:52 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/10/11 12:40:23 by yuknakas         ###   ########.fr       */
+/*   Updated: 2025/10/11 13:55:08 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 # define PHONEBOOK_HPP
 
 # include "contact.hpp"
+# include <iostream>
+# include <iomanip>
+# include <stdlib.h>
 
 class	PhoneBook
 {
@@ -30,7 +33,7 @@ class	PhoneBook
 		void	searchContact(void);
 };
 
-# define MSG_INDEX "Index does not exist. Current index: 0 ~ "
+# define MSG_INDEX "Index does not exist. Current index: 1 ~ "
 # define MSG_NO_ENTRY "There are no contacts saved or to search (yet!)"
 # define MSG_EMPTY_SEARCH "Empty line unaccepted: press \"ctrl + D\" to" \
 							" terminate searching for a contact"

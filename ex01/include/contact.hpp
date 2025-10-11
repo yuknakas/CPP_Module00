@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 17:22:44 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/10/11 11:00:39 by yuknakas         ###   ########.fr       */
+/*   Updated: 2025/10/11 12:44:36 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define CONTACT_HPP
 
 # include <iostream>
+# include <iomanip>
 
 class	Contact
 {
