@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 17:47:04 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/10/10 23:29:22 by yuknakas         ###   ########.fr       */
+/*   Updated: 2025/10/11 10:59:46 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,10 @@ int	Contact::setContact(int id)
 	std::string	tmp_phone;
 	std::string	tmp_secret;
 
-	if (_checkInput(PROMPT_FIRST, tmp_first) |
-		_checkInput(PROMPT_LAST, tmp_last) |
-		_checkInput(PROMPT_NICK, tmp_nickname) |
-		_checkInput(PROMPT_PHONE, tmp_phone) |
+	if (_checkInput(PROMPT_FIRST, tmp_first) ||
+		_checkInput(PROMPT_LAST, tmp_last) ||
+		_checkInput(PROMPT_NICK, tmp_nickname) ||
+		_checkInput(PROMPT_PHONE, tmp_phone) ||
 		_checkInput(PROMPT_SECRET, tmp_secret))
 		return (1);
 	this->index = id;
@@ -69,7 +69,7 @@ static void	_printShort(const std::string& line)
 		std::cout << std::right << std::setw(10) << (line.substr(0, 9) + ".");
 }
 
-void	Contact::showContactShort(void)
+void	Contact::showContactShort(void)const
 {
 	std::cout << std::right << std::setw(10) << this->index;
 	std::cout << "|";
@@ -81,7 +81,7 @@ void	Contact::showContactShort(void)
 	std::cout << std::resetiosflags(std::ios::adjustfield) << std::endl;
 }
 
-void	Contact::showContactExtend(void)
+void	Contact::showContactExtend(void)const
 {
 	std::cout << "Index: " << this->index << std::endl;
 	std::cout << "First Name: " << this->first_name << std::endl;
@@ -91,7 +91,7 @@ void	Contact::showContactExtend(void)
 	std::cout << "Darkest Secret: " << this->secret << std::endl;
 }
 
-int	Contact::getIndex(void)
+int	Contact::getIndex(void)const
 {
 	return (this->index);
 }
