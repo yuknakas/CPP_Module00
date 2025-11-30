@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 14:30:24 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/11/29 16:53:22 by yuknakas         ###   ########.fr       */
+/*   Updated: 2025/11/29 16:55:39 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -137,7 +137,7 @@ void	Account::displayStatus( void ) const
 	std::cout << std::endl;
 }
 
-void	_displayTimestamp( void )
+void	Account::_displayTimestamp( void )
 {
 	time_t		actual_time;
 	struct tm	*timeinfo;
