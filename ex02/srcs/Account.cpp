@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 14:30:24 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/11/29 16:48:08 by yuknakas         ###   ########.fr       */
+/*   Updated: 2025/11/29 16:53:22 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,13 +90,13 @@ void	Account::makeDeposit( int deposit )
 {
 	Account::_displayTimestamp();
 	std::cout << "index:" << this->_accountIndex << ";";
-	std::cout << "p_amount:" << Account::checkAmount << ";";
+	std::cout << "p_amount:" << Account::checkAmount() << ";";
 	std::cout << "deposit:" << deposit << ";";
 	this->_amount += deposit;
 	this->_nbDeposits++;
 	Account::_totalAmount += deposit;
 	Account::_totalNbDeposits++;
-	std::cout << "amount:" << Account::checkAmount << ";";
+	std::cout << "amount:" << Account::checkAmount() << ";";
 	std::cout << "nb_deposits:" << this->_nbDeposits;
 	std::cout << std::endl;
 }
@@ -105,7 +105,7 @@ bool	Account::makeWithdrawal( int withdrawal )
 {
 	Account::_displayTimestamp();
 	std::cout << "index:" << this->_accountIndex << ";";
-	std::cout << "p_amount:" << Account::checkAmount << ";";
+	std::cout << "p_amount:" << Account::checkAmount() << ";";
 	if (this->_amount < withdrawal)
 	{
 		std::cout << "withdrawal:refused" << std::endl;
@@ -116,7 +116,7 @@ bool	Account::makeWithdrawal( int withdrawal )
 	this->_nbWithdrawals++;
 	Account::_totalAmount -= withdrawal;
 	Account::_totalNbWithdrawals++;
-	std::cout << "amount:" << Account::checkAmount << ";";
+	std::cout << "amount:" << Account::checkAmount() << ";";
 	std::cout << "nb_withdrawals:" << this->_nbWithdrawals;
 	std::cout << std::endl;
 	return (true);
@@ -131,7 +131,7 @@ void	Account::displayStatus( void ) const
 {
 	Account::_displayTimestamp();
 	std::cout << "index:" << this->_accountIndex << ";";
-	std::cout << "amount:" << Account::checkAmount << ";";
+	std::cout << "amount:" << Account::checkAmount() << ";";
 	std::cout << "deposits:" << this->_nbDeposits << ";";
 	std::cout << "withdrawals:" << this->_nbWithdrawals;
 	std::cout << std::endl;
