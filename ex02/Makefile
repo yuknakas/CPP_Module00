@@ -6,7 +6,7 @@
 #    By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/29 16:44:29 by yuknakas          #+#    #+#              #
-#    Updated: 2025/11/29 16:54:27 by yuknakas         ###   ########.fr        #
+#    Updated: 2025/11/29 16:58:28 by yuknakas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,5 +31,7 @@ clean:
 
 fclean: clean
 	$(RMFLAG) $(NAME)
+
+re: fclean all clean
 
 .PHONY: all clean fclean
