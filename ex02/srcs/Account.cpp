@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 14:30:24 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/11/29 16:57:04 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/02 10:20:50 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	Account::displayAccountsInfos( void )
 {
 	Account::_displayTimestamp();
 	std::cout << "accounts:" << Account::getNbAccounts() << ";";
-	std::cout << "amount:" << Account::getTotalAmount() << ";";
+	std::cout << "total:" << Account::getTotalAmount() << ";";
 	std::cout << "deposits:" << Account::getNbDeposits() << ";";
 	std::cout << "withdrawals:" << Account::getNbWithdrawals();
 	std::cout << std::endl;
