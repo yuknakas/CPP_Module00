@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 22:01:48 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/07/02 09:48:07 by yuknakas         ###   ########.fr       */
+/*   Updated: 2025/10/11 13:57:46 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,6 @@ static int	_getIndexInput(int count)
 {
 	std::string	line;
 	int			index;
-	std::size_t	*pos;
 
 	while (1)
 	{
@@ -102,9 +101,7 @@ static int	_getIndexInput(int count)
 		}
 		if (!line.empty())
 		{
-			index = std::stoi(line, pos);
-			if (*pos != line.size())
-				std::cout << MSG_STOI << std::endl;
+			index = atoi(line.c_str());
 			if (0 < index && index <= count)
 				return (index);
 			std::cout << MSG_INDEX << count << std::endl;
