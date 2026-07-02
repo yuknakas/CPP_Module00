@@ -6,12 +6,12 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 11:11:12 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/10/06 11:12:14 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/02 09:16:32 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <ctype.h>
+#include <cctype>
 
 void	all_upper(char *str)
 {
